@@ -1,5 +1,6 @@
 package com.example.bookMyInterview.api;
 
+import jdk.jfr.DataAmount;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
  
@@ -14,6 +15,7 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 @SpringBootApplication
 @RestController
+@DataAmount
 @EnableHystrix
 public class BookMyInterviewApplication {
 	@Autowired
